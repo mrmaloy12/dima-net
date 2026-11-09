@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Дыма нет — магазин в Новосибирске · 18+</title>
+<meta name="description" content="«Дыма нет» — современный магазин в Новосибирске: табак, кальянных смесей, вейпов, систем нагревания и аксессуаров. Только для лиц старше 18 лет.">
+<meta property="og:title" content="Дыма нет — свет, который не гаснет">
+<meta property="og:description" content="Табак, кальянные смеси, вейпы, системы нагревания и аксессуары. 18+">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23100d24'/%3E%3Ctext x='32' y='47' font-size='42' font-family='Arial' font-weight='700' text-anchor='middle' fill='%234cff78' stroke='%23ff3d57' stroke-width='1'%3E%D0%94%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ===== Theme tokens ===== */
+:root{
+  --bg:#08071a; --bg2:#100d28; --text:#eceaf7; --muted:#b4b0cf;
+  --red:#ff3d57; --lime:#4cff78; --violet:#a56bff;
+  --head:'Unbounded','Trebuchet MS',Arial,sans-serif;
+  --body:'Manrope','Segoe UI',Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:radial-gradient(1200px 600px at 80% -10%,#2a1366 0,transparent 60%),radial-gradient(900px 500px at -10% 40%,#0c3a26 0,transparent 55%),var(--bg);
+  color:var(--text);font:400 1.05rem/1.65 var(--body);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--lime)}
+h1,h2,h3{font-family:var(--head);line-height:1.15;margin:0 0 .6em;font-weight:700}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:92px 0}
+.eyebrow{font:500 .8rem var(--head);letter-spacing:.25em;text-transform:uppercase;color:var(--lime);text-shadow:0 0 10px var(--lime)}
+
+/* ===== Neon text ===== */
+.neon-red{color:#ffd9de;text-shadow:0 0 4px #fff,0 0 12px var(--red),0 0 28px var(--red),0 0 60px var(--red)}
+.neon-lime{color:#e3ffe9;text-shadow:0 0 4px #fff,0 0 12px var(--lime),0 0 30px var(--lime)}
+h2{font-size:clamp(1.6rem,4vw,2.4rem)}
+h2.neon-lime{opacity:.35}
+.reveal.in h2.neon-lime,h2.neon-lime.in{animation:ignite 1.1s steps(1) forwards}
+@keyframes ignite{0%{opacity:.1}10%{opacity:1}18%{opacity:.2}28%{opacity:1}40%{opacity:.4}55%,100%{opacity:1}}
+.flick{animation:flick 6s infinite}
+@keyframes flick{0%,18%,22%,62%,64%,100%{opacity:1}20%{opacity:.35}63%{opacity:.6}}
+
+/* ===== Header ===== */
+header{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(8,7,26,.72);backdrop-filter:blur(10px);border-bottom:1px solid rgba(165,107,255,.3)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font:700 1.05rem var(--head);text-decoration:none;text-transform:uppercase;white-space:nowrap}.logo img{border-radius:50%;box-shadow:0 0 14px rgba(76,255,120,.55)}
+nav{display:flex;gap:22px;align-items:center}
+nav a{color:var(--text);text-decoration:none;font-size:.92rem;opacity:.85}
+nav a:hover{color:var(--lime);opacity:1}
+.age{border:1.5px solid var(--red);color:#ffd9de;border-radius:8px;padding:2px 8px;font:700 .85rem var(--head);box-shadow:0 0 12px rgba(255,61,87,.6),inset 0 0 8px rgba(255,61,87,.4)}
+@media(max-width:720px){nav a:not(.age){display:none}}
+
+/* ===== Buttons ===== */
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;border:1.5px solid var(--red);color:#fff;text-decoration:none;font:700 .95rem var(--head);background:rgba(255,61,87,.08);cursor:pointer;box-shadow:0 0 14px rgba(255,61,87,.55),inset 0 0 12px rgba(255,61,87,.25);transition:transform .25s,box-shadow .25s}
+.btn:hover,.btn:focus-visible{transform:translateY(-2px);animation:pulse 1.6s ease-in-out infinite;outline:none}
+@keyframes pulse{50%{box-shadow:0 0 30px rgba(255,61,87,.9),inset 0 0 18px rgba(255,61,87,.45)}}
+.btn.gr{border-color:var(--lime);background:rgba(76,255,120,.07);box-shadow:0 0 14px rgba(76,255,120,.5),inset 0 0 12px rgba(76,255,120,.2)}
+
+/* ===== Hero ===== */
+.hero{min-height:100svh;display:grid;align-items:center;position:relative;overflow:hidden;padding:110px 0 70px}
+.hero-bg{position:absolute;inset:-8% 0;background:url(images/hero.jpg) center/cover;opacity:.42;will-change:transform}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,7,26,.3),var(--bg) 96%),radial-gradient(circle at 70% 40%,transparent,rgba(8,7,26,.7))}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{text-transform:uppercase;font-size:clamp(3rem,13vw,7.5rem);margin:.15em 0 .2em;letter-spacing:.02em}
+.slogan{font-size:clamp(1.1rem,2.6vw,1.5rem);max-width:30ch;color:var(--text)}
+.hero .btn{margin-top:24px}
+
+/* ===== About ===== */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.fact{border-left:2px solid var(--lime);padding:6px 0 6px 18px;box-shadow:-8px 0 20px -12px var(--lime)}
+.fact b{display:block;font:700 1.9rem var(--head);color:#e3ffe9;text-shadow:0 0 14px var(--lime)}
+.lead{max-width:62ch;color:var(--muted)}
+
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+.shop{margin:0;position:relative;overflow:hidden;border-radius:18px;aspect-ratio:4/3.3;border:1.5px solid var(--violet);box-shadow:0 0 30px -4px var(--violet),0 0 60px -20px var(--red)}
+.shop img{width:100%;height:116%;object-fit:cover}
+.shop::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,rgba(255,61,87,.16),transparent 45%,rgba(76,255,120,.14));pointer-events:none}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+/* ===== Cards ===== */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:34px}
+.card{--c:var(--red);padding:26px;border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.04),rgba(255,255,255,.01));border:1.5px solid var(--c);box-shadow:0 0 16px -2px var(--c),inset 0 0 22px -12px var(--c);transition:transform .3s}
+.card:hover{transform:translateY(-5px)}
+.card:nth-child(3n+2){--c:var(--lime)} .card:nth-child(3n){--c:var(--violet)}
+.card svg{width:44px;height:44px;stroke:var(--c);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px var(--c));margin-bottom:12px}
+.card h3{font-size:1.05rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+
+/* ===== Contacts ===== */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.contact ul{list-style:none;margin:0;padding:0}
+.contact li{padding:12px 0;border-bottom:1px solid rgba(165,107,255,.3)}
+.contact li span{display:block;font-size:.78rem;color:var(--lime);letter-spacing:.15em;text-transform:uppercase}
+.box{padding:28px;border-radius:18px;border:1.5px solid var(--lime);box-shadow:0 0 22px -4px var(--lime)}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+
+/* ===== Footer ===== */
+footer{padding:40px 0 50px;border-top:1px solid rgba(165,107,255,.35);color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+
+/* ===== Age gate ===== */
+#gate{position:fixed;inset:0;z-index:100;display:none;place-items:center;text-align:center;padding:24px;background:radial-gradient(700px 400px at 50% 40%,#2a1366,var(--bg))}
+#gate.show{display:grid}
+#gate .panel{max-width:460px}
+#gate h2{font-size:clamp(1.5rem,5vw,2.2rem)}
+#gate .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+#deny{display:none}
+body.locked{overflow:hidden}
+
+/* ===== Reveal ===== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .flick,.btn:hover,.btn:focus-visible,h2.neon-lime.in,.reveal.in h2.neon-lime{animation:none}
+  h2.neon-lime{opacity:1}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body class="locked">
+
+<!-- Age verification -->
+<div id="gate" role="dialog" aria-modal="true" aria-labelledby="gt">
+  <div class="panel"><img src="images/logo.png" width="96" height="96" alt="Логотип «Дыма нет»" style="border-radius:50%;margin:0 auto 14px;box-shadow:0 0 28px rgba(76,255,120,.6)">
+    <p class="age" style="display:inline-block">18+</p>
+    <div id="ask">
+      <h2 id="gt" class="neon-red">Вам уже исполнилось 18&nbsp;лет?</h2>
+      <p class="lead" style="margin:0 auto">Сайт содержит информацию о табачной и никотиносодержащей продукции и предназначен только для совершеннолетних.</p>
+      <div class="row">
+        <button class="btn" id="yes" type="button">Да, мне 18+</button>
+        <button class="btn gr" id="no" type="button">Нет</button>
+      </div>
+    </div>
+    <div id="deny">
+      <h2 class="neon-lime">Доступ ограничен</h2>
+      <p class="lead" style="margin:0 auto">Материалы сайта доступны только лицам старше 18 лет. Спасибо за понимание.</p>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Дыма нет — на главную"><img src="images/logo.png" width="40" height="40" alt="Логотип «Дыма нет»"><span class="neon-lime">Дыма</span> <span class="neon-red">нет</span></a>
+    <nav aria-label="Основная навигация">
+      <a href="#about">О магазине</a><a href="#assortment">Ассортимент</a><a href="#contacts">Контакты</a>
+      <span class="age" aria-label="Только для лиц старше 18 лет">18+</span>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-bg" data-par="0.25" role="img" aria-label="Полки магазина «Дыма нет» с подсветкой"></div>
+    <div class="wrap">
+      <p class="eyebrow">Новосибирск · 18+</p>
+      <h1 id="h1"><span class="neon-lime">Ды<span class="flick">м</span>а</span> <span class="neon-red flick" style="animation-delay:-3s">нет</span></h1>
+      <p class="slogan">Свет вместо шума. Выбор — вместо случайности.</p>
+      <a class="btn" href="#contacts">Найти нас</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" aria-labelledby="h-about"><div class="wrap reveal about"><div>
+    <p class="eyebrow">О магазине</p>
+    <h2 id="h-about" class="neon-lime">Новосибирск, в котором есть своё место</h2>
+    <p class="lead">«Дыма нет» — магазин для тех, кто ценит стиль и качество в мелочах. Мы собрали проверенный ассортимент, ровный свет, хорошую музыку и спокойную атмосферу, где никто не торопит. Консультанты подскажут без навязывания и всегда уточнят возраст — для нас это правило, а не формальность.</p>
+    <div class="grid3">
+      <div class="fact"><b>24</b>филиала в Новосибирске</div>
+      <div class="fact"><b>5</b>категорий в одном месте</div>
+      <div class="fact"><b>18+</b>строгий контроль возраста</div>
+    </div></div>
+    <figure class="shop"><img data-par="0.06" src="images/about.jpg" alt="Витрина магазина «Дыма нет» с фиолетовой LED-подсветкой полок" loading="lazy"></figure>
+  </div></section>
+
+  <!-- Assortment -->
+  <section id="assortment" aria-labelledby="h-as"><div class="wrap reveal">
+    <p class="eyebrow">Ассортимент</p>
+    <h2 id="h-as" class="neon-lime">Что у нас есть</h2>
+    <div class="cards">
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 32h30v6H6z"/><path d="M40 32v6M44 32v6"/><path d="M30 24c2-3-2-5 0-8"/></svg><h3>Табак</h3><p>Сигареты, сигары и табак для самокруток известных производителей.</p></article>
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c3 4-3 6 0 10M20 14h8l2 8H18zM18 22c-4 6-2 14 6 14s10-8 6-14M16 44h16"/></svg><h3>Кальяны и смеси</h3><p>Колбы, шахты, чаши и табачные смеси для вечеров в компании.</p></article>
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="16" y="8" width="16" height="34" rx="6"/><path d="M20 14h8M24 28v4"/></svg><h3>Вейпы и жидкости</h3><p>Устройства, картриджи и жидкости с никотином и без.</p></article>
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="14" width="28" height="20" rx="4"/><path d="M16 24h10M32 24h2"/></svg><h3>Системы нагревания</h3><p>Устройства и стики для тех, кто выбирает современный формат.</p></article>
+      <article class="card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l4 10 10 2-8 7 2 11-8-6-8 6 2-11-8-7 10-2z"/></svg><h3>Аксессуары</h3><p>Зажигалки, пепельницы, хьюмидоры, угли и сменные детали.</p></article>
+    </div>
+  </div></section>
+
+  <!-- Contacts -->
+  <section id="contacts" aria-labelledby="h-c"><div class="wrap reveal">
+    <p class="eyebrow">Контакты</p>
+    <h2 id="h-c" class="neon-lime">Заходите на огонёк</h2>
+    <div class="contact">
+      <ul>
+        <li><span>Город</span>Новосибирск</li>
+        <li><span>Филиалы</span>24 магазина по всему городу</li>
+        <li><span>Как нас найти</span>Ищите «Дыма нет» в 2ГИС — выберите ближайший к вам адрес</li>
+      </ul>
+      <div class="box">
+        <p style="margin-top:0">Откройте карту, выберите ближайший филиал и приходите. Не забудьте документ: при необходимости мы подтвердим возраст.</p>
+        <!-- Замените ссылку ниже на ссылку на вашу карточку в 2ГИС -->
+        <a class="btn gr" id="link2gis" href="https://2gis.ru/novosibirsk/search/%D0%94%D1%8B%D0%BC%D0%B0%20%D0%BD%D0%B5%D1%82" target="_blank" rel="noopener">Найти в 2ГИС</a>
+      </div>
+    </div>
+  </div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="age">18+</span>
+    <span>Продажа лицам младше 18 лет запрещена.</span>
+    <span>© 2026 «Дыма нет»</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var KEY='dyma18', gate=document.getElementById('gate'), b=document.body;
+  var ok=false;
+  try{ok=localStorage.getItem(KEY)==='1'}catch(e){}
+  function open(){gate.classList.remove('show');b.classList.remove('locked')}
+  if(ok){open()}else{gate.classList.add('show')}
+  document.getElementById('yes').onclick=function(){try{localStorage.setItem(KEY,'1')}catch(e){};open()};
+  document.getElementById('no').onclick=function(){
+    document.getElementById('ask').style.display='none';document.getElementById('deny').style.display='block'};
+
+  /* Reveal on scroll */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+  /* Soft parallax (skipped for reduced motion) */
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var els=[].slice.call(document.querySelectorAll('[data-par]')),t=false;
+    function upd(){t=false;var vh=innerHeight;els.forEach(function(el){
+      var r=el.getBoundingClientRect();if(r.bottom<0||r.top>vh)return;
+      var k=parseFloat(el.dataset.par),d=(r.top+r.height/2-vh/2)*k;
+      el.style.transform='translate3d(0,'+(-d).toFixed(1)+'px,0)'})}
+    addEventListener('scroll',function(){if(!t){t=true;requestAnimationFrame(upd)}},{passive:true});upd();
+  }
+})();
+</script>
+</body>
+</html>
